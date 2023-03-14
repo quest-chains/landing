@@ -1,4 +1,3 @@
-import { ArrowDownIcon } from '@chakra-ui/icons';
 import {
   Box,
   Container,
@@ -13,6 +12,7 @@ import { Link } from 'react-scroll';
 
 import { QUESTCHAINS__APP_URL } from '@/utils/constants';
 
+import { ArrowDownIcon } from '../icons/ArrowDownIcon';
 import { PrimaryButton } from '../PrimaryButton';
 
 export const QuestChains: React.FC = () => {

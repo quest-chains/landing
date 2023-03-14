@@ -17,7 +17,14 @@ const Index: React.FC = () => {
       direction="column"
       align="center"
       pos="relative"
-      bg="#111312"
+      _before={{
+        content: '""',
+        position: 'fixed',
+        zIndex: -10,
+        bg: '#111312',
+        w: '100%',
+        h: '100%',
+      }}
     >
       <HeadComponent />
       <QuestChains />

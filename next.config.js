@@ -30,11 +30,6 @@ module.exports = {
         destination: QUESTCHAINS__APP_URL + '/arbitrum/:slug*',
         permanent: true,
       },
-      {
-        source: '/explore',
-        destination: QUESTCHAINS__APP_URL + '/explore',
-        permanent: true,
-      },
     ];
   },
 };

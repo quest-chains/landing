@@ -1,5 +1,4 @@
-import { createIcon } from '@chakra-ui/icons';
-import * as React from 'react';
+import { createIcon } from '@chakra-ui/icon';
 
 export const GithubIcon = createIcon({
   displayName: 'GithubIcon',

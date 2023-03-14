@@ -1,10 +1,4 @@
-# @quest-chains/dapp
-
-### Create your .env file:
-
-```shell
-cp sample.env .env
-```
+# @quest-chains/landing
 
 ### Install dependencies:
 

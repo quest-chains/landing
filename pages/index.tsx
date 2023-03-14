@@ -11,7 +11,14 @@ import { HeadComponent } from '@/components/Seo';
 
 const Index: React.FC = () => {
   return (
-    <Flex w="100%" h="100%" direction="column" align="center" pos="relative">
+    <Flex
+      w="100%"
+      h="100%"
+      direction="column"
+      align="center"
+      pos="relative"
+      bg="#111312"
+    >
       <HeadComponent />
       <QuestChains />
       <What />

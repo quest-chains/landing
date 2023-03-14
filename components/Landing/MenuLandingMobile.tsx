@@ -8,9 +8,10 @@ import {
   Portal,
   Text,
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+
+import { QUESTCHAINS__APP_URL } from '@/utils/constants';
 
 import { NavToggle } from '../Layout/NavToggle';
 
@@ -41,18 +42,21 @@ export const MenuLandingMobile: React.FC = () => {
               justifyContent="center"
               gap={4}
             >
-              <NextLink href="/explore" passHref>
-                <ChakraLink display="block" _hover={{}}>
-                  <Button
-                    fontSize={20}
-                    cursor="pointer"
-                    fontFamily="headingLight"
-                    onClick={toggleOpen}
-                  >
-                    Enter App
-                  </Button>
-                </ChakraLink>
-              </NextLink>
+              <ChakraLink
+                display="block"
+                _hover={{}}
+                isExternal
+                href={QUESTCHAINS__APP_URL}
+              >
+                <Button
+                  fontSize={20}
+                  cursor="pointer"
+                  fontFamily="headingLight"
+                  onClick={toggleOpen}
+                >
+                  Enter App
+                </Button>
+              </ChakraLink>
 
               <Link
                 activeClass="active"

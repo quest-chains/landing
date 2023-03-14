@@ -9,8 +9,9 @@ import {
   Stack,
   VStack,
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import { Link } from 'react-scroll';
+
+import { QUESTCHAINS__APP_URL } from '@/utils/constants';
 
 import { PrimaryButton } from '../PrimaryButton';
 
@@ -100,19 +101,22 @@ export const QuestChains: React.FC = () => {
             </VStack>
           </Heading>
           <Flex gap={3}>
-            <NextLink href="/explore" passHref>
-              <ChakraLink display="block" _hover={{}}>
-                <PrimaryButton
-                  px={{ base: 8, md: 12 }}
-                  fontSize={20}
-                  height={12}
-                  borderColor="white"
-                  boxShadow="inset 0px 0px 0px 1px white"
-                >
-                  ENTER APP
-                </PrimaryButton>
-              </ChakraLink>
-            </NextLink>
+            <ChakraLink
+              display="block"
+              _hover={{}}
+              isExternal
+              href={QUESTCHAINS__APP_URL}
+            >
+              <PrimaryButton
+                px={{ base: 8, md: 12 }}
+                fontSize={20}
+                height={12}
+                borderColor="white"
+                boxShadow="inset 0px 0px 0px 1px white"
+              >
+                ENTER APP
+              </PrimaryButton>
+            </ChakraLink>
           </Flex>
           <Stack py={24} justifyContent="center" alignItems="center">
             <Heading as="h1" fontSize={20}>

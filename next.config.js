@@ -1,50 +1,38 @@
+const QUESTCHAINS__APP_URL =
+  process.env.NEXT_PUBLIC_QUESTCHAINS_APP_URL || 'https://app.questchains.xyz';
+
 module.exports = {
   reactStrictMode: true,
   async redirects() {
     return [
       {
         source: '/chain/:slug*',
-        destination: '/:slug*',
+        destination: QUESTCHAINS__APP_URL + '/:slug*',
         permanent: true,
       },
       {
-        source: '/chain/0x13881/:slug*',
-        destination: '/mumbai/:slug*',
+        source: '/polygon/:slug*',
+        destination: QUESTCHAINS__APP_URL + '/polygon/:slug*',
         permanent: true,
       },
       {
-        source: '/chain/0x89/:slug*',
-        destination: '/polygon/:slug*',
+        source: '/gnosis/:slug*',
+        destination: QUESTCHAINS__APP_URL + '/gnosis/:slug*',
         permanent: true,
       },
       {
-        source: '/chain/0x64/:slug*',
-        destination: '/gnosis/:slug*',
+        source: '/optimism/:slug*',
+        destination: QUESTCHAINS__APP_URL + '/optimism/:slug*',
         permanent: true,
       },
       {
-        source: '/chain/0x5/:slug*',
-        destination: '/goerli/:slug*',
+        source: '/arbitrum/:slug*',
+        destination: QUESTCHAINS__APP_URL + '/arbitrum/:slug*',
         permanent: true,
       },
       {
-        source: '/0x13881/:slug*',
-        destination: '/mumbai/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/0x89/:slug*',
-        destination: '/polygon/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/0x64/:slug*',
-        destination: '/gnosis/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/0x5/:slug*',
-        destination: '/goerli/:slug*',
+        source: '/explore',
+        destination: QUESTCHAINS__APP_URL + '/explore',
         permanent: true,
       },
     ];

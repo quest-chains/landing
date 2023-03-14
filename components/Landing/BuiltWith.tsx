@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
 
-import { SUPPORTED_NETWORK_INFO } from '@/web3/networks';
+import { SUPPORTED_NETWORK_INFO } from '@/utils/networks';
 
 export const BuiltWith: React.FC = () => {
   const isSmallScreen = useBreakpointValue({ base: true, lg: false });

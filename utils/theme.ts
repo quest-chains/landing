@@ -1,8 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import { css } from '@emotion/react';
 
-import { checkboxTheme } from './checkbox';
-
 const Input = {
   variants: {
     outline: {
@@ -128,28 +126,6 @@ export const theme = extendTheme({
     Input,
     Button,
     Form,
-    Checkbox: checkboxTheme,
-    // Checkbox: {
-    //   baseStyle: {
-    //     control: {
-    //       bg: 'transparent',
-    //       _checked: {
-    //         bg: 'transparent',
-    //         _hover: {
-    //           bg: 'transparent',
-    //           borderColor: 'white',
-    //           borderRadius: 'full',
-    //         },
-    //         borderColor: 'white',
-    //         borderRadius: 'full',
-    //       },
-    //       borderRadius: 'full',
-    //       _hover: {
-    //         bg: 'transparent',
-    //       },
-    //     },
-    //   },
-    // },
   },
 });
 

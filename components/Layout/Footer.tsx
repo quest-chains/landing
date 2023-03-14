@@ -9,6 +9,8 @@ import {
 } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
+import { QUESTCHAINS__APP_URL } from '@/utils/constants';
+
 import { DiscordIcon } from '../icons/DiscordIcon';
 import { GithubIcon } from '../icons/GithubIcon';
 import { MediumIcon } from '../icons/MediumIcon';
@@ -22,7 +24,11 @@ type TextLinkType = {
 
 const textLinks: TextLinkType[] = [
   { label: 'What is Quest Chains?', href: '/', external: false },
-  { label: 'Explore quest chains', href: '/explore', external: false },
+  {
+    label: 'Explore quest chains',
+    href: QUESTCHAINS__APP_URL,
+    external: true,
+  },
   {
     label: 'Documentation',
     href: 'https://quest-chains.gitbook.io/app-documentation/',
